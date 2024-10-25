@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atende Top - Atendimento Inteligente para sua Empresa</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .text-purple-custom {
+            color: #7e30dd;
+        }
+
+        .bg-purple-custom {
+            background-color: #7e30dd;
+        }
+
+        .border-purple-custom {
+            border-color: #7e30dd;
+        }
+
+        .bg-gradient-purple {
+            background: linear-gradient(to right, #7e30dd, #b05ee1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-purple-custom">Atende Top</div>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#funcionalidades" class="text-gray-600 hover:text-purple-custom">Funcionalidades</a>
+                    <a href="#planos" class="text-gray-600 hover:text-purple-custom">Planos</a>
+                    <a href="#contato"
+                        class="bg-purple-custom text-white px-6 py-2 rounded-full hover:bg-purple-custom">
+                        Começar Agora
+                    </a>
+                </div>
+
+                <!-- Botão Menu Mobile -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-purple-custom">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-purple w-full">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-white" data-aos="fade-right">
+                    <h1 class="text-4xl text-white md:text-5xl font-bold mb-6">
+                        Seu Funcionário Robô que Vende 24h por Dia
+                    </h1>
+                    <p class="text-xl mb-8">
+                        Sem salário, sem dor de cabeça e com atendimento em todas as suas redes sociais ao mesmo tempo!
+                    </p>
+                    <a href="#contato"
+                        class="bg-white text-purple-custom px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 inline-block">
+                        Experimente Grátis por 7 Dias
+                    </a>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0" data-aos="fade-left">
+                    <script src="https://fast.wistia.com/embed/medias/xnolsqvqrd.jsonp" async></script>
+                    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                    <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                        <div class="wistia_responsive_wrapper"
+                            style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                            <div class="wistia_embed wistia_async_xnolsqvqrd seo=true videoFoam=true"
+                                style="height:100%;position:relative;width:100%">
+                                <div class="wistia_swatch"
+                                    style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                    <img src="https://fast.wistia.com/embed/medias/xnolsqvqrd/swatch"
+                                        style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
+                                        aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="funcionalidades" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">O que o seu negócio precisa o Atende Top resolve!</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="bg-purple-custom w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Multi-canais de Atendimento</h3>
+                    <p class="text-gray-600">Atenda seus clientes no WhatsApp, Instagram, Facebook e Site, tudo em um só
+                        lugar.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-purple-custom w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Equipe Ilimitada</h3>
+                    <p class="text-gray-600">Conecte todos os seus atendentes em uma única plataforma simples e fácil de
+                        usar.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-purple-custom w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Interface Familiar</h3>
+                    <p class="text-gray-600">Parecido com WhatsApp Web para seus atendentes aprenderem em minutos.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-purple-custom w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Inteligência Artificial Avançada</h3>
+                    <p class="text-gray-600">Automatize até 90% do seu atendimento com nossa IA que aprende e melhora
+                        todos os dias.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-purple-custom w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">100% na Nuvem</h3>
+                    <p class="text-gray-600">Sem instalações. Acesse de qualquer lugar com internet e comece a usar
+                        agora mesmo.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bg-purple-custom w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Widget para seu Site</h3>
+                    <p class="text-gray-600">Atendimento automático direto no seu site, sem precisar redirecionar para
+                        outras redes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Chat Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold mb-6">Veja a Inteligência Artificial em Ação</h2>
+                <p class="text-xl text-gray-600">Nossa IA atende seus clientes como um vendedor experiente, 24 horas por
+                    dia
+                </p>
+            </div>
+
+            <!-- Demo Selector -->
+            <div class="flex justify-center mb-8 space-x-4">
+                <button
+                    class="demo-selector px-6 py-3 rounded-full bg-purple-custom text-white font-medium hover:bg-purple-custom transition-colors"
+                    data-demo="sales">
+                    Vendas
+                </button>
+                <button
+                    class="demo-selector px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-colors"
+                    data-demo="support">
+                    Suporte
+                </button>
+                <button
+                    class="demo-selector px-6 py-3 rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 transition-colors"
+                    data-demo="schedule">
+                    Agendamentos
+                </button>
+            </div>
+
+            <!-- Chat Demo Container -->
+            <div class="max-w-md mx-auto bg-gray-100 rounded-2xl shadow-xl overflow-hidden">
+                <!-- Chat Header -->
+                <div class="bg-purple-custom text-white p-4 flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-purple-custom" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-bold">Atendimento Atende Top</div>
+                        <div class="text-sm opacity-75">Online</div>
+                    </div>
+                </div>
+
+                <!-- Chat Messages -->
+                <div id="chat-container" class="p-4 h-[500px] overflow-y-auto space-y-4">
+                    <!-- Messages will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Social Proof - Adicionar antes da seção de preços -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Empresas que Confiam no Atende Top</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                <!-- Depoimento 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <img src="/api/placeholder/64/64" alt="Logo Cliente" class="w-16 h-16 rounded-full" />
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Móveis Silva</h4>
+                            <p class="text-gray-600">Loja de Móveis</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Aumentamos nossas vendas em 40% com o atendimento automático do Atende
+                        Top.
+                        Nossa equipe agora consegue focar nos clientes que realmente precisam de atenção especial."</p>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="/api/placeholder/64/64" alt="Logo Cliente" class="w-16 h-16 rounded-full" />
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Auto Peças BR</h4>
+                            <p class="text-gray-600">Autopeças</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"O robô responde dúvidas básicas dos clientes mesmo fora do horário
+                        comercial. Quando abrimos a loja, já temos vários orçamentos prontos para finalizar."</p>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="/api/placeholder/64/64" alt="Logo Cliente" class="w-16 h-16 rounded-full" />
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Padaria São José</h4>
+                            <p class="text-gray-600">Padaria</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Conseguimos organizar melhor os pedidos por delivery e nossos clientes
+                        adoram a rapidez no atendimento. O Atende Top já faz parte da nossa equipe!"</p>
+                </div>
+            </div>
+
+            <!-- Logos dos clientes -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-50">
+                <img src="/api/placeholder/120/60" alt="Logo Cliente" class="mx-auto" />
+                <img src="/api/placeholder/120/60" alt="Logo Cliente" class="mx-auto" />
+                <img src="/api/placeholder/120/60" alt="Logo Cliente" class="mx-auto" />
+                <img src="/api/placeholder/120/60" alt="Logo Cliente" class="mx-auto" />
+                <img src="/api/placeholder/120/60" alt="Logo Cliente" class="mx-auto" />
+                <img src="/api/placeholder/120/60" alt="Logo Cliente" class="mx-auto" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="planos" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Escolha o Plano Ideal para Seu Negócio</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                    <div class="text-4xl font-bold mb-6">R$97<span class="text-lg text-gray-500">/mês</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Até 3 atendentes
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Todos os canais
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            IA Básica
+                        </li>
+                    </ul>
+                    <a href="#contato"
+                        class="block text-center bg-purple-custom text-white px-6 py-3 rounded-full hover:bg-purple-custom">
+                        Começar Agora
+                    </a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-purple-custom rounded-xl shadow-lg p-8 transform scale-105" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div
+                        class="absolute top-0 right-0 bg-yellow-400 text-xs font-bold px-3 py-1 rounded-tr-xl rounded-bl-xl">
+                        MAIS POPULAR
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Pro</h3>
+                    <div class="text-4xl font-bold mb-6 text-white">R$197<span class="text-lg text-gray-200">/mês</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-white">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-400 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Até 20 atendentes
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-400 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Todos os canais
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-400 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 024 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            IA Avançada
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-400 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Relatórios avançados
+                        </li>
+                    </ul>
+                    <a href="#contato"
+                        class="block text-center bg-white text-purple-custom px-6 py-3 rounded-full hover:bg-gray-100">
+                        Começar Agora
+                    </a>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4">Business</h3>
+                    <div class="text-4xl font-bold mb-6">R$497<span class="text-lg text-gray-500">/mês</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Atendentes ilimitados
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Todos os recursos Pro
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            Suporte prioritário
+                        </li>
+                    </ul>
+                    <a href="#contato"
+                        class="block text-center bg-purple-custom text-white px-6 py-3 rounded-full hover:bg-purple-custom">
+                        Começar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-purple">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8" data-aos="fade-up">
+                Pronto para Revolucionar seu Atendimento?
+            </h2>
+            <p class="text-xl text-gray-100 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Comece hoje mesmo com 7 dias grátis. Sem compromisso, sem cartão de crédito.
+            </p>
+            <a href="#contato"
+                class="inline-block bg-white text-purple-custom px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100"
+                data-aos="fade-up" data-aos-delay="200">
+                Começar Gratuitamente
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Chat Section -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center mb-16">Perguntas Frequentes</h2>
+
+            <div class="bg-gray-100 rounded-2xl p-6 max-w-2xl mx-auto shadow-lg" data-aos="fade-up">
+                <!-- Chat Container -->
+                <div class="space-y-6">
+                    <!-- Pergunta 1 -->
+                    <div class="chat-question">
+                        <button
+                            class="faq-button w-full flex items-center space-x-4 p-3 rounded-xl hover:bg-gray-200 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-purple-custom rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4z" />
+                                </svg>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold">Preciso instalar algo no computador?</h3>
+                                <p class="text-sm text-gray-500">Clique para ver a resposta</p>
+                            </div>
+                        </button>
+                        <div class="chat-answer hidden mt-4 space-y-4">
+                            <div class="flex justify-end">
+                                <div class="bg-purple-custom text-white p-4 rounded-t-2xl rounded-bl-2xl max-w-md">
+                                    Preciso instalar algum programa no computador para usar o Atende Top?
+                                </div>
+                            </div>
+                            <div class="flex space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div class="bg-white p-4 rounded-t-2xl rounded-br-2xl max-w-md shadow-sm">
+                                    Não precisa instalar nada! 😊 O Atende Top funciona 100% na nuvem, basta acessar
+                                    nosso
+                                    site
+                                    pelo navegador e começar a usar imediatamente.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="chat-question">
+                        <button
+                            class="faq-button w-full flex items-center space-x-4 p-3 rounded-xl hover:bg-gray-200 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-purple-custom rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold">Como funciona a Inteligência Artificial?</h3>
+                                <p class="text-sm text-gray-500">Clique para ver a resposta</p>
+                            </div>
+                        </button>
+                        <div class="chat-answer hidden mt-4 space-y-4">
+                            <div class="flex justify-end">
+                                <div class="bg-purple-custom text-white p-4 rounded-t-2xl rounded-bl-2xl max-w-md">
+                                    Me explica como funciona a Inteligência Artificial do Atende Top?
+                                </div>
+                            </div>
+                            <div class="flex space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div class="bg-white p-4 rounded-t-2xl rounded-br-2xl max-w-md shadow-sm">
+                                    Nossa IA é como um vendedor virtual que nunca dorme! 🤖 Ela aprende com as conversas
+                                    anteriores e:
+                                    <br><br>
+                                    ✅ Responde dúvidas dos clientes<br>
+                                    ✅ Faz orçamentos automaticamente<br>
+                                    ✅ Agenda visitas e reuniões<br>
+                                    ✅ Fecha vendas 24h por dia
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="chat-question">
+                        <button
+                            class="faq-button w-full flex items-center space-x-4 p-3 rounded-xl hover:bg-gray-200 transition-colors">
+                            <div
+                                class="w-12 h-12 bg-purple-custom rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold">Em quanto tempo começo a usar?</h3>
+                                <p class="text-sm text-gray-500">Clique para ver a resposta</p>
+                            </div>
+                        </button>
+                        <div class="chat-answer hidden mt-4 space-y-4">
+                            <div class="flex justify-end">
+                                <div class="bg-purple-custom text-white p-4 rounded-t-2xl rounded-bl-2xl max-w-md">
+                                    Quero usar hoje! Quanto tempo demora para configurar?
+                                </div>
+                            </div>
+                            <div class="flex space-x-4">
+                                <div
+                                    class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div class="bg-white p-4 rounded-t-2xl rounded-br-2xl max-w-md shadow-sm">
+                                    Super rápido! Em 5 minutos você já está atendendo: ⚡️
+                                    <br><br>
+                                    1. Faça seu cadastro<br>
+                                    2. Conecte suas redes sociais<br>
+                                    3. Configure informações básicas<br>
+                                    4. Pronto para usar! 🎉
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="mt-8 text-center pt-6 border-t border-gray-200">
+                    <p class="text-gray-600 mb-4">Ainda tem dúvidas? Fale com a gente!</p>
+                    <a href="#contato"
+                        class="inline-block bg-purple-custom text-white px-8 py-3 rounded-full hover:bg-purple-custom transition-colors duration-200">
+                        Iniciar Conversa
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const faqButtons = document.querySelectorAll('.faq-button');
+
+                faqButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const chatQuestion = button.closest('.chat-question');
+                        const answer = chatQuestion.querySelector('.chat-answer');
+
+                        // Animate the answer
+                        if (answer.classList.contains('hidden')) {
+                            answer.classList.remove('hidden');
+                            answer.style.opacity = '0';
+                            answer.style.transform = 'translateY(-10px)';
+                            setTimeout(() => {
+                                answer.style.transition = 'all 0.3s ease-out';
+                                answer.style.opacity = '1';
+                                answer.style.transform = 'translateY(0)';
+                            }, 50);
+                        } else {
+                            answer.style.opacity = '0';
+                            answer.style.transform = 'translateY(-10px)';
+                            setTimeout(() => {
+                                answer.classList.add('hidden');
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        </script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Atende Top</h3>
+                    <p class="text-gray-400">
+                        Transformando o atendimento ao cliente com inteligência artificial.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#funcionalidades" class="hover:text-white">Funcionalidades</a></li>
+                        <li><a href="#planos" class="hover:text-white">Planos</a></li>
+                        <li><a href="#contato" class="hover:text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-white">Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contato</h4>
+                    <ul class="space-y-2">
+                        <li>contato@atendetop.com</li>
+                        <li>(11) 3280-3722</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Atende Top. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const chatDemos = {
+            sales: [
+                { type: 'bot', text: 'Olá! 👋 Sou a assistente virtual da Loja XYZ. Como posso ajudar você hoje?' },
+                {
+                    type: 'user',
+                    text: '[Áudio: "Oi, gostaria de saber informações sobre esse notebook, vou te mandar a foto"]',
+                    isAudio: true,
+                    duration: '0:06',
+                    delay: 2000
+                },
+                {
+                    type: 'bot',
+                    text: 'Claro! Pode me enviar a foto do notebook que você tem interesse. 📸',
+                    delay: 2200
+                },
+                {
+                    type: 'user',
+                    isImage: true,
+                    imageUrl: 'https://quenotebookcomprar.com.br/wp-content/uploads/2023/06/Lenovo-ThinkPad-X1-Yoga-20Y00039BR-Core-i7-1185G7-11-geracao-RAM-32-GB-SSD-1-TB-Tela-14-0-polegadas-UHD-4K-IPS-touchscreen-Windows-11-Pro-Adaptador-USB-C-para-RJ-45.jpg',
+                    delay: 3500
+                },
+                {
+                    type: 'bot',
+                    text: 'Analisei a imagem! 🔍\n\nEste é o Lenovo ThinkPad X1 Yoga, um notebook premium com as seguintes especificações:\n\n▫️ Processador Intel Core i7 11ª Geração\n▫️ 32GB RAM\n▫️ SSD 1TB\n▫️ Tela 14" UHD 4K IPS Touchscreen\n▫️ Windows 11 Pro\n\nPreço: R$ 12.999 ou 12x de R$ 1.083,25\n\nÉ um notebook profissional com tela touch e design conversível. Excelente para trabalho e produtividade! 💼',
+                    delay: 4300
+                },
+                {
+                    type: 'user',
+                    text: '[Áudio: "Uau, incrível! Vocês tem ele em estoque? E se eu pagar no PIX tem desconto?"]',
+                    isAudio: true,
+                    duration: '0:07',
+                    delay: 3100
+                },
+                {
+                    type: 'bot',
+                    text: 'Sim! 🚚 Temos em estoque para entrega imediata.\n\nNo pagamento via PIX você ganha:\n\n▫️ 15% de desconto\n▫️ Preço final: R$ 11.049,15\n▫️ Frete GRÁTIS\n▫️ Entrega em até 2 dias úteis\n\nGostaria de prosseguir com a compra?',
+                    action: {
+                        type: 'pix',
+                        value: 'pix@Atende Top.com',
+                        label: 'Copiar PIX'
+                    },
+                    delay: 7300
+                }
+            ],
+            support: [
+                { type: 'bot', text: 'Olá! 👋 Bem-vindo ao suporte técnico. Como posso ajudar?' },
+                { type: 'user', text: 'Meu notebook está muito lento', delay: 2100 },
+                { type: 'bot', text: 'Entendi! Vou te ajudar com isso. 🔍 Quando foi a última vez que você reiniciou o notebook?', delay: 1700 },
+                { type: 'user', text: 'Faz uns 5 dias', delay: 1900 },
+                { type: 'bot', text: 'Ok! Vamos fazer algumas verificações rápidas:\n\n1️⃣ Reinicie o notebook\n2️⃣ Verifique programas em segundo plano\n3️⃣ Analise o espaço em disco\n\nVou te guiar passo a passo, ok? 😊', delay: 3900 },
+                { type: 'user', text: 'Sim, pode me ajudar', delay: 4600 }
+            ],
+            schedule: [
+                { type: 'bot', text: 'Olá! 👋 Bem-vindo ao agendamento online. Como posso ajudar?' },
+                { type: 'user', text: 'Quero agendar uma consulta', delay: 2100 },
+                { type: 'bot', text: 'Ótimo! 📅 Temos horários disponíveis para esta semana. Qual período você prefere?\n\n▫️ Manhã (08h às 12h)\n▫️ Tarde (13h às 17h)\n▫️ Noite (18h às 21h)', delay: 2400 },
+                { type: 'user', text: 'Prefiro de manhã', delay: 1800 },
+                { type: 'bot', text: 'Perfeito! Para amanhã de manhã temos os seguintes horários:\n\n⏰ 09:00\n⏰ 10:30\n⏰ 11:15\n\nQual horário é melhor para você?', delay: 3300 },
+                { type: 'user', text: 'Pode ser às 9h', delay: 2700 },
+                { type: 'bot', text: 'Excelente! 🎯 Vou reservar amanhã às 9h para você. Te enviarei dois lembretes antes do horário marcado!', delay: 4700 }
+            ]
+        };
+
+        let currentDemo = 'sales';
+        let isAnimating = false;
+        let animationTimeout;
+
+        function createMessage(message) {
+            const div = document.createElement('div');
+            div.className = 'flex ' + (message.type === 'bot' ? '' : 'justify-end');
+
+            const messageContainer = document.createElement('div');
+            messageContainer.className = message.type === 'bot'
+                ? 'bg-white rounded-t-xl rounded-br-xl p-3 max-w-[80%] shadow-sm'
+                : 'bg-purple-custom text-white rounded-t-xl rounded-bl-xl p-3 max-w-[80%] shadow-sm';
+
+            if (message.isAudio) {
+                const audioContainer = document.createElement('div');
+                audioContainer.className = 'flex items-center space-x-2';
+
+                const audioIcon = document.createElement('div');
+                audioIcon.innerHTML = [
+                    '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">',
+                    '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>',
+                    '</svg>'
+                ].join('');
+
+                const waveform = document.createElement('div');
+                waveform.className = 'flex items-center space-x-0.5';
+                for (let i = 0; i < 12; i++) {
+                    const bar = document.createElement('div');
+                    const height = Math.random() * 12 + 3;
+                    bar.className = 'w-0.5 ' + (message.type === 'bot' ? 'bg-gray-400' : 'bg-white') + ' rounded';
+                    bar.style.height = height + 'px';
+                    waveform.appendChild(bar);
+                }
+
+                const duration = document.createElement('span');
+                duration.className = 'text-sm ml-2';
+                duration.textContent = message.duration;
+
+                audioContainer.appendChild(audioIcon);
+                audioContainer.appendChild(waveform);
+                audioContainer.appendChild(duration);
+                messageContainer.appendChild(audioContainer);
+            }
+            else if (message.isImage) {
+                const imageContainer = document.createElement('div');
+
+                if (message.imageUrl) {
+                    const img = document.createElement('img');
+                    img.src = message.imageUrl;
+                    img.alt = 'ThinkPad X1 Yoga';
+                    img.className = 'rounded-lg w-full max-w-xs mb-2';
+                    imageContainer.appendChild(img);
+                }
+
+                messageContainer.appendChild(imageContainer);
+            }
+
+            if (message.text && !message.isAudio && !message.isImage) {
+                const textDiv = document.createElement('div');
+                textDiv.className = message.action ? 'mb-3' : '';
+                textDiv.style.whiteSpace = 'pre-line';
+                textDiv.textContent = message.text;
+                messageContainer.appendChild(textDiv);
+            }
+
+            if (message.action && message.action.type === 'pix') {
+                const buttonDiv = document.createElement('div');
+                buttonDiv.className = 'pt-2 border-t border-gray-200';
+
+                const button = document.createElement('button');
+                button.className = 'w-full flex items-center justify-center space-x-2 bg-purple-custom text-white px-4 py-2.5 rounded-lg hover:bg-purple-custom transition-colors';
+
+                const icon = document.createElement('span');
+                icon.innerHTML = [
+                    '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">',
+                    '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>',
+                    '</svg>'
+                ].join('');
+
+                const buttonText = document.createElement('span');
+                buttonText.textContent = message.action.label;
+
+                button.appendChild(icon);
+                button.appendChild(buttonText);
+
+                button.addEventListener('click', async function () {
+                    try {
+                        await navigator.clipboard.writeText(message.action.value);
+                        const originalContent = button.innerHTML;
+                        button.innerHTML = '<span class="text-sm">✓ PIX Copiado!</span>';
+                        button.classList.add('bg-green-600');
+
+                        setTimeout(function () {
+                            button.innerHTML = originalContent;
+                            button.classList.remove('bg-green-600');
+                        }, 2000);
+                    } catch (err) {
+                        console.error('Erro ao copiar:', err);
+                    }
+                });
+
+                buttonDiv.appendChild(button);
+                messageContainer.appendChild(buttonDiv);
+            }
+
+            div.appendChild(messageContainer);
+            return div;
+        }
+
+        function animateMessages(messages, container) {
+            container.innerHTML = '';
+            isAnimating = true;
+            let currentIndex = 0;
+
+            function showNextMessage() {
+                if (currentIndex < messages.length && currentDemo === messages[currentIndex].demo) {
+                    const message = messages[currentIndex];
+                    const messageElement = createMessage(message);
+                    container.appendChild(messageElement);
+                    container.scrollTop = container.scrollHeight;
+
+                    currentIndex++;
+                    if (currentIndex < messages.length) {
+                        animationTimeout = setTimeout(showNextMessage, messages[currentIndex].delay || 1000);
+                    } else {
+                        setTimeout(function () {
+                            isAnimating = false;
+                            animateMessages(messages, container);
+                        }, 3000);
+                    }
+                }
+            }
+
+            showNextMessage();
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('chat-container');
+            const buttons = document.querySelectorAll('.demo-selector');
+
+            function startDemo(demoType) {
+                if (isAnimating) {
+                    clearTimeout(animationTimeout);
+                }
+
+                currentDemo = demoType;
+                buttons.forEach(function (btn) {
+                    if (btn.dataset.demo === demoType) {
+                        btn.classList.remove('bg-gray-200', 'text-gray-700');
+                        btn.classList.add('bg-purple-custom', 'text-white');
+                    } else {
+                        btn.classList.remove('bg-purple-custom', 'text-white');
+                        btn.classList.add('bg-gray-200', 'text-gray-700');
+                    }
+                });
+
+                const messages = chatDemos[demoType].map(function (msg) {
+                    return Object.assign({}, msg, { demo: demoType });
+                });
+                animateMessages(messages, container);
+            }
+
+            buttons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    startDemo(button.dataset.demo);
+                });
+            });
+
+            startDemo('sales');
+        });
+    </script>
+
+    <script>
+        // Script de inicialização do AOS (Animate On Scroll)
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+                offset: 100,
+                once: true
+            });
+        });
+    </script>
+
+    <!-- Script para o menu mobile -->
+    <script>
+        // Menu mobile
+        document.addEventListener('DOMContentLoaded', function () {
+            var mobileMenuButton = document.getElementById('mobile-menu-button');
+            var closeMenuButton = document.getElementById('close-menu');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+
+            function toggleMenu(show) {
+                if (show) {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            }
+
+            // Abrir menu
+            mobileMenuButton.addEventListener('click', function () {
+                toggleMenu(true);
+            });
+
+            // Fechar menu
+            closeMenuButton.addEventListener('click', function () {
+                toggleMenu(false);
+            });
+
+            // Fechar menu ao clicar em links
+            Array.prototype.forEach.call(mobileMenuLinks, function (link) {
+                link.addEventListener('click', function () {
+                    toggleMenu(false);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
